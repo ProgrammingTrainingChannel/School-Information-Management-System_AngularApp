@@ -1,0 +1,156 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student Information</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Fullname:</label>
+                            <input type="text" class="form-control" name="Fullname" placeholder="Fullname" [(ngModel)]="student.Fullname" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Mother's Name:</label>
+                            <input type="text" class="form-control" name="MotherName" placeholder="Mother's 'Name" [(ngModel)]="student.MotherName" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Birth Date:</label>
+                            <input type="date" class="form-control" name="BirthDate" placeholder="Birth Date" [(ngModel)]="student.BirthDate" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <label>Gender</label>
+                        <select id="ListOfGenders" class="form-control" [(ngModel)]="SelectedGenderID" required>
+                            <option *ngFor="let gender of ListOfGenders" value={{gender.ID}}>
+                                {{gender.Name}}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Region</label>
+                            <select id="ListOfRegions" class="form-control" [(ngModel)]="SelectedRegionID" required>
+                                <option *ngFor="let region of ListOfRegions" value={{region.ID}}>
+                                    {{region.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Subcity</label>
+                            <select id="ListOfSubcitys" class="form-control" [(ngModel)]="SelectedSubcityID" required>
+                                <option *ngFor="let subcity of ListOfSubCitys" value={{subcity.ID}}>
+                                    {{subcity.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Woreda</label>
+                            <select id="ListOfWoredas" class="form-control" [(ngModel)]="SelectedWoredaID" required>
+                                <option *ngFor="let woreda of ListOfWoredas" value={{woreda.ID}}>
+                                    {{woreda.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>House No.:</label>
+                            <input type="text" class="form-control" name="HouseNo" placeholder="House No" [(ngModel)]="student.HouseNo" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Admission Year:</label>
+                            <input type="text" class="form-control" name="AdmissionYear" placeholder="Admission Year" [(ngModel)]="student.AdmissionYear" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Campus:</label>
+                            <select id="ListOfCampuses" class="form-control" [(ngModel)]="SelectedCampusID" required>
+                                <option *ngFor="let campus of ListOfCampuses" value={{campus.ID}}>
+                                    {{campus.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Grade Section:</label>
+                            <select id="ListOfGradeSections" class="form-control" [(ngModel)]="SelectedGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <input type="checkbox" name="IsSponsored" [(ngModel)]="student.IsSponsored" /><label>&nbsp;Is Sponsored ?</label>
+                            <input type="checkbox" name="IsHandicaped" [(ngModel)]="student.IsHandicaped" /><label>&nbsp;Is Handicaped ?</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateStudent()" translate="Save Student">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Student"> Save Student </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Mother Name</th>
+                            <th>Admission Year</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let student of ListOfStudents'>
+                            <td>{{student.Fullname}}</td>
+                            <td>{{student.MotherName}}</td>
+                            <td>{{student.AdmissionYear}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleStudent(student)" style="width:90%" type="button" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteStudent(student)" style="width:90%" type="button" class="btn btn-primary btn-xs">
+                                    <i title="Delete" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudents || ListOfStudents.length==0">
+                            <td colspan="8">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student's Transcript Report</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Grade</label>
+                            <select id="ListOfGrades" class="form-control" (change)="LoadGradeSections()" [(ngModel)]="SelectedGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Section</label>
+                            <select id="ListOfGradeSections" class="form-control" (change)="LoadStudents()" [(ngModel)]="SelectedGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label>Student</label>
+                            <select id="ListOfStudents" class="form-control" [(ngModel)]="SelectedStudentID" required>
+                                <option *ngFor="let student of ListOfStudents" value={{student.ID}}>
+                                    {{student.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>AcademicYear:</label>
+                            <input type="text" class="form-control" name="AcademicYear" placeholder="Academic Year" [(ngModel)]="SelectedAcademicYearID" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Grade</label>
+                            <select id="ListOfGrades" class="form-control" [(ngModel)]="SelectedGradeName" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.Name}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="LoadStudentGradeReport()" translate="Show Transcript Report">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Show Transcript Report"> Show Transcript Report </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Exam Type</th>
+                            <th>Out of Total</th>
+                            <th>Mark Obtained</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentTranscript of ListOfStudentTranscripts'>
+                            <td>{{studentTranscript.ExamType}}</td>
+                            <td>{{studentTranscript.OutOfTotal}}</td>
+                            <td>{{studentTranscript.MarkObtained}}</td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentTranscripts || ListOfStudentTranscripts.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

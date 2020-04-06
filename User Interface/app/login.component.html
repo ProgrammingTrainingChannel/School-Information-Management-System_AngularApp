@@ -1,0 +1,60 @@
+﻿<div class="login-box" *ngIf="!IsLoggedIn">
+    <div class="login-logo">
+        <b>
+            School of America
+        </b>
+    </div>
+    <!-- /.login-logo -->
+    <div class="login-box-body">
+        <p class="login-box-msg">Sign in to start your session</p>
+        <form action="~/Views/Shared/_LayoutCopy.cshtml" method="post">
+            <div class="form-group has-feedback">
+                <input type="email" name="username" class="form-control" placeholder="Email" [(ngModel)]="username">
+                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+            </div>
+            <div class="form-group has-feedback">
+                <input type="password" name="password" class="form-control" placeholder="Password" [(ngModel)]="password">
+                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+            </div>
+            <div class="row">
+                <div class="col-xs-8">
+                    <div class="checkbox icheck">
+                        <label>
+                            <input type="checkbox"> Remember Me
+                        </label>
+                    </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-xs-4">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="box-tools pull-right">
+                                <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="UserLogin()" translate="Login">
+                                    <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Login"> Log in </i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col -->
+            </div>
+            <br/>
+            <div class="row" style="color:red" *ngIf="LoginFailed">
+                <p class="login-box-msg">Invalid Username or Password</p>
+            </div>
+        </form>
+    </div>
+    <!-- /.login-box-body -->
+</div>
+    <div class="row" *ngIf="IsLoggedIn">
+        <div class="col-xs-12 col-md-12 pull-right">
+            <div class="box-tools pull-right">
+                <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="UserLogout()" translate="Logout">
+                    <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Logout"> Logout </i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+<alert></alert>
+<router-outlet *ngIf="IsLoggedIn"></router-outlet>

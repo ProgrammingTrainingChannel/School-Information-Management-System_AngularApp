@@ -1,0 +1,87 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Grade Courses</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Teacher</label>
+                            <select id="ListOfTeachers" class="form-control" [(ngModel)]="SelectedTeacherID" required>
+                                <option *ngFor="let teacher of ListOfTeachers" value={{teacher.ID}}>
+                                    {{teacher.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Grade</label>
+                            <select id="ListOfGrades" class="form-control" [(ngModel)]="SelectedGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Course</label>
+                            <select id="ListOfCourses" class="form-control" [(ngModel)]="SelectedCourseID" required>
+                                <option *ngFor="let course of ListOfCourses" value={{course.ID}}>
+                                    {{course.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateGradeCourse()" translate="Save Grade Course">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Grade Course"> Save Grade Course </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Teacher Name</th>
+                            <th>Grade</th>
+                            <th>Course</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let gradeCourse of ListOfGradeCourses'>
+                            <td>{{gradeCourse.Teacher.Fullname}}</td>
+                            <td>{{gradeCourse.Grade.Name}}</td>
+                            <td>{{gradeCourse.Course.Name}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleGradeCourse(gradeCourse)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteGradeCourse(gradeCourse)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfGradeCourses || ListOfGradeCourses.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

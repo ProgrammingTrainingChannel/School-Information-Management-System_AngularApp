@@ -1,0 +1,117 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student Admission Information</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Current Grade</label>
+                            <select id="ListOfGrades" class="form-control" [(ngModel)]="SelectedGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Current Section</label>
+                            <select id="ListOfGradeSections" class="form-control" [(ngModel)]="SelectedGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Student</label>
+                            <select id="ListOfStudents" class="form-control" [(ngModel)]="SelectedStudentID" required>
+                                <option *ngFor="let student of ListOfStudents" value={{student.ID}}>
+                                    {{student.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>New Grade</label>
+                            <select id="ListOfGrades" class="form-control" [(ngModel)]="SelectedNewGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>New Section</label>
+                            <select id="ListOfGradeSections" class="form-control" [(ngModel)]="SelectedNewGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="form-group">
+                            <label>Admission Date:</label>
+                            <input type="date" class="form-control" name="AdmissionDate" placeholder="Admission Date" [(ngModel)]="studentAdmission.AdmissionDate" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateStudentAdmission()" translate="Save Student Admission">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Student Admission"> Save Student Admission </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Grade</th>
+                            <th>Grade Section</th>
+                            <th>Admission Date</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentAdmission of ListOfStudentAdmissions'>
+                            <td>{{studentAdmission.Student.Fullname}}</td>
+                            <td>{{studentAdmission.Grade.Name}}</td>
+                            <td>{{studentAdmission.GradeSection.Name}}</td>
+                            <td>{{studentAdmission.AdmissionDate}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleStudentAdmission(studentAdmission)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteStudentAdmission(studentAdmission)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentAdmissions || ListOfStudentAdmissions.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

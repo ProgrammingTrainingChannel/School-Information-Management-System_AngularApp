@@ -1,0 +1,218 @@
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\csc.exe
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\System.Collections.Immutable.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\System.Reflection.Metadata.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\vbc.exe
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\VBCSCompiler.exe
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\roslyn\VBCSCompiler.exe.config
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\User Interface.dll.config
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\User Interface.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\User Interface.pdb
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Antlr3.Runtime.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\BusinessEntity.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\BusinessLogic.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\EntityFramework.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\EntityFramework.SqlServer.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.Core.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Cookies.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Facebook.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Google.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.OAuth.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Twitter.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Web.Infrastructure.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Newtonsoft.Json.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Owin.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Helpers.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Mvc.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Optimization.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Razor.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.Deployment.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.Razor.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\WebGrease.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\DataAccessLogic.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\BusinessEntity.pdb
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\BusinessLogic.pdb
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Helpers.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Mvc.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Optimization.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.Razor.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.Deployment.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\System.Web.WebPages.Razor.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Antlr3.Runtime.pdb
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Newtonsoft.Json.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\EntityFramework.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\EntityFramework.SqlServer.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.Core.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Facebook.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Cookies.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.OAuth.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Google.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.Twitter.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\BT IT Solutions\Human Resource Management System\User Interface\bin\DataAccessLogic.pdb
+E:\BT IT Solutions\Human Resource Management System\User Interface\obj\Debug\User Interface.csprojResolveAssemblyReference.cache
+E:\BT IT Solutions\Human Resource Management System\User Interface\obj\Debug\User Interface.dll
+E:\BT IT Solutions\Human Resource Management System\User Interface\obj\Debug\User Interface.pdb
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\csc.exe
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\System.Collections.Immutable.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\System.Reflection.Metadata.dll
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\vbc.exe
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\VBCSCompiler.exe
+E:\CREAVERS\SIMS\User Interface\bin\roslyn\VBCSCompiler.exe.config
+E:\CREAVERS\SIMS\User Interface\bin\User Interface.dll.config
+E:\CREAVERS\SIMS\User Interface\bin\User Interface.dll
+E:\CREAVERS\SIMS\User Interface\bin\User Interface.pdb
+E:\CREAVERS\SIMS\User Interface\bin\Antlr3.Runtime.dll
+E:\CREAVERS\SIMS\User Interface\bin\EntityFramework.dll
+E:\CREAVERS\SIMS\User Interface\bin\EntityFramework.SqlServer.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Core.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Cookies.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Facebook.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Google.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.OAuth.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Twitter.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Web.Infrastructure.dll
+E:\CREAVERS\SIMS\User Interface\bin\Newtonsoft.Json.dll
+E:\CREAVERS\SIMS\User Interface\bin\Owin.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Helpers.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Mvc.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Optimization.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Razor.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Deployment.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.dll
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Razor.dll
+E:\CREAVERS\SIMS\User Interface\bin\WebGrease.dll
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Helpers.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Mvc.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Optimization.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.Razor.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Deployment.xml
+E:\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Razor.xml
+E:\CREAVERS\SIMS\User Interface\bin\Antlr3.Runtime.pdb
+E:\CREAVERS\SIMS\User Interface\bin\Newtonsoft.Json.xml
+E:\CREAVERS\SIMS\User Interface\bin\EntityFramework.xml
+E:\CREAVERS\SIMS\User Interface\bin\EntityFramework.SqlServer.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Core.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Facebook.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Cookies.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.OAuth.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Google.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Twitter.xml
+E:\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.dll
+E:\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.pdb
+E:\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.csprojResolveAssemblyReference.cache
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\csc.exe
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\System.Collections.Immutable.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\System.Reflection.Metadata.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\vbc.exe
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\VBCSCompiler.exe
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\roslyn\VBCSCompiler.exe.config
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\User Interface.dll.config
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\User Interface.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\User Interface.pdb
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Antlr3.Runtime.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\EntityFramework.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\EntityFramework.SqlServer.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Core.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Cookies.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Facebook.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Google.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.OAuth.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Twitter.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Web.Infrastructure.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Newtonsoft.Json.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Owin.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Helpers.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Mvc.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Optimization.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Razor.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Deployment.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Razor.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\WebGrease.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Helpers.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Mvc.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Optimization.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.Razor.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Deployment.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\System.Web.WebPages.Razor.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Antlr3.Runtime.pdb
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Newtonsoft.Json.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\EntityFramework.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\EntityFramework.SqlServer.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Core.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Facebook.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Cookies.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.OAuth.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Google.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.Twitter.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.csprojAssemblyReference.cache
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.csproj.CoreCompileInputs.cache
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.csproj.CopyComplete
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.dll
+F:\My Files\Projects\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.pdb
+D:\BT IT Solutions\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.csprojResolveAssemblyReference.cache
+D:\BT IT Solutions\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.dll
+D:\BT IT Solutions\CREAVERS\SIMS\User Interface\obj\Debug\User Interface.pdb

@@ -1,0 +1,72 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Meeting Schedule Followup</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Meeting Schedule</label>
+                            <select id="ListOfMeetingTypes" class="form-control" [(ngModel)]="SelectedMeetingScheduleID" required>
+                                <option *ngFor="let meetingSchedule of ListOfMeetingSchedules" value={{meetingSchedule.ID}}>
+                                    {{meetingSchedule.Title}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Detail Minute:</label>
+                            <textarea rows="5" class="form-control" name="DetailMinute" [(ngModel)]="meetingFollowup.DetailMinute"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateMeetingFollowup()" translate="Save Meeting Followup">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Meeting Followup"> Save Meeting Followup </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Meeting Title</th>
+                            <th>Detail Minute</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let meetingFollowup of ListOfMeetingFollowups'>
+                            <td>{{meetingFollowup.MeetingSchedule.Title}}</td>
+                            <td>{{meetingFollowup.DetailMinute}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleMeetingFollowup(meetingFollowup)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteMeetingFollowup(meetingFollowup)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfMeetingFollowups || ListOfMeetingFollowups.length==0">
+                            <td colspan="3">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

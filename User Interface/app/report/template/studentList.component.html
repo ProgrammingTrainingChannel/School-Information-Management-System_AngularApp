@@ -1,0 +1,56 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student's List Report</h2>
+            </div>
+            <div class="box-body">
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Fullname</th>
+                            <th>Mother Name</th>
+                            <th>House No</th>
+                            <th>IsSponsored</th>
+                            <th>IsHandicaped</th>
+                            <th>Admission Year</th>
+                            <th>BirthDate</th>
+                            <th>Gender</th>
+                            <th>Campus</th>
+                            <th>Grade Section</th>
+                            <th>Region</th>
+                            <th>Woreda</th>
+                            <th>SubCity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentList of ListOfStudentList'>
+                            <td>{{studentList.ID}}</td>
+                            <td>{{studentList.Fullname}}</td>
+                            <td>{{studentList.MotherName}}</td>
+                            <td>{{studentList.HouseNo}}</td>
+                            <td>{{studentList.IsSponsored}}</td>
+                            <td>{{studentList.IsHandicaped}}</td>
+                            <td>{{studentList.AdmissionYear}}</td>
+                            <td>{{studentList.BirthDate}}</td>
+                            <td>{{studentList.GenderName}}</td>
+                            <td>{{studentList.CampusName}}</td>
+                            <td>{{studentList.GradeSectionName}}</td>
+                            <td>{{studentList.RegionName}}</td>
+                            <td>{{studentList.WoredaName}}</td>
+                            <td>{{studentList.SubCityName}}</td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentList || ListOfStudentList.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

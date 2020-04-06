@@ -1,0 +1,127 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Meeting Schedule Information</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Title:</label>
+                            <input type="text" class="form-control" name="Title" placeholder="Title" [(ngModel)]="meetingSchedule.Title" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea rows="5" class="form-control" name="Description" [(ngModel)]="meetingSchedule.Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Start Date:</label>
+                            <input type="date" class="form-control" name="StartDate" placeholder="Start Date" [(ngModel)]="meetingSchedule.StartDate" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Start Time:</label>
+                            <input type="text" class="form-control" name="StartTime" placeholder="Start Time" [(ngModel)]="meetingSchedule.StartTime" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>End Date:</label>
+                            <input type="date" class="form-control" name="EndDate" placeholder="EndDate" [(ngModel)]="meetingSchedule.EndDate" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>End Time:</label>
+                            <input type="text" class="form-control" name="EndTime" placeholder="End Time" [(ngModel)]="meetingSchedule.EndTime" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Meeting Type</label>
+                            <select id="ListOfMeetingTypes" class="form-control" [(ngModel)]="SelectedMeetingTypeID" required>
+                                <option *ngFor="let meetingType of ListOfMeetingTypes" value={{meetingType.ID}}>
+                                    {{meetingType.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <div class="form-group">
+                            <label>Organizer:</label>
+                            <input type="text" class="form-control" name="Organizer" placeholder="Organizer" [(ngModel)]="meetingSchedule.Organizer" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>General Agenda:</label>
+                            <textarea rows="5" class="form-control" name="GeneralAgenda" [(ngModel)]="meetingSchedule.GeneralAgenda"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateMeetingSchedule()" translate="Save Meeting Schedule">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Meeting Schedule"> Save Meeting Schedule </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Meeting Type</th>
+                            <th>Organizers</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let meetingSchedule of ListOfMeetingSchedules'>
+                            <td>{{meetingSchedule.Title}}</td>
+                            <td>{{meetingSchedule.StartDate}}</td>
+                            <td>{{meetingSchedule.EndDate}}</td>
+                            <td>{{meetingSchedule.MeetingType.Name}}</td>
+                            <td>{{meetingSchedule.Organizer}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleMeetingSchedule(meetingSchedule)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteMeetingSchedule(meetingSchedule)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfMeetingSchedules || ListOfMeetingSchedules.length==0">
+                            <td colspan="7">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

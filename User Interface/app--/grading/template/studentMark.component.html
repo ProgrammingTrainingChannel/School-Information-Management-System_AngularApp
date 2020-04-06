@@ -1,0 +1,163 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student Grade Information</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Grade</label>
+                            <select id="ListOfGrades" class="form-control" (change)="LoadGradeSections()" [(ngModel)]="SelectedGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Section</label>
+                            <select id="ListOfGradeSections" class="form-control" (change)="LoadStudents()" [(ngModel)]="SelectedGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label>Student</label>
+                            <select id="ListOfStudents" class="form-control" [(ngModel)]="SelectedStudentID" required>
+                                <option *ngFor="let student of ListOfStudents" value={{student.ID}}>
+                                    {{student.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Course</label>
+                            <select id="ListOfCourses" class="form-control" [(ngModel)]="SelectedCourseID" required>
+                                <option *ngFor="let course of ListOfCourses" value={{course.ID}}>
+                                    {{course.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Exam Type</label>
+                            <select id="ListOfExamTypes" class="form-control" [(ngModel)]="SelectedExamTypeID" required>
+                                <option *ngFor="let examType of ListOfExamTypes" value={{examType.ID}}>
+                                    {{examType.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Academic Year:</label>
+                            <input type="text" class="form-control" name="AcademicYear" placeholder="Academic Year" [(ngModel)]="studentMark.AcademicYear" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Academic Quarter</label>
+                            <select id="ListOfAcademicQuarters" class="form-control" [(ngModel)]="SelectedAcademicQuarterID" required>
+                                <option *ngFor="let academicQuarter of ListOfAcademicQuarters" value={{academicQuarter.ID}}>
+                                    {{academicQuarter.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Out of Total:</label>
+                            <input type="text" class="form-control" name="OutOfTotal" placeholder="Out of Total" [(ngModel)]="studentMark.OutOfTotal" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Mark Obtained:</label>
+                            <input type="text" class="form-control" name="MarkObtained" placeholder="Mark Obtained" [(ngModel)]="studentMark.MarkObtained" />
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Mark Percentage:</label>
+                            <input type="text" class="form-control" name="MarkPercentage" placeholder="Mark Percentage" [(ngModel)]="studentMark.MarkPercentage" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Remark:</label>
+                            <textarea rows="5" class="form-control" name="Remark" [(ngModel)]="studentMark.Remark"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateStudentMark()" translate="Save Student Mark">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Student Mark"> Save Student Mark </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Course</th>
+                            <th>Exam Type</th>
+                            <th>Academic Year</th>
+                            <th>Academic Quarter</th>
+                            <th>Total Mark</th>
+                            <th>Mark Obtained</th>
+                            <th>Percentage</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentMark of ListOfStudentMarks'>
+                            <td>{{studentMark.Student.Fullname}}</td>
+                            <td>{{studentMark.Course.Name}}</td>
+                            <td>{{studentMark.Examtype.Name}}</td>
+                            <td>{{studentMark.AcademicYear}}</td>
+                            <td>{{studentMark.AcademicQuarter.Name}}</td>
+                            <td>{{studentMark.OutOfTotal}}</td>
+                            <td>{{studentMark.MarkObtained}}</td>
+                            <td>{{(studentMark.MarkObtained/studentMark.OutOfTotal)*100}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleStudentMark(studentMark)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteStudentMark(studentMark)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentMarks || ListOfStudentMarks.length==0">
+                            <td colspan="10">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

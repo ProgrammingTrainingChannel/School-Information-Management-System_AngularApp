@@ -1,0 +1,138 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Student's Descipline</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Grade</label>
+                            <select id="ListOfGrades" class="form-control" (change)="LoadGradeSections()" [(ngModel)]="SelectedGradeID" required>
+                                <option *ngFor="let grade of ListOfGrades" value={{grade.ID}}>
+                                    {{grade.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Section</label>
+                            <select id="ListOfGradeSections" class="form-control" (change)="LoadStudents()" [(ngModel)]="SelectedGradeSectionID" required>
+                                <option *ngFor="let gradeSection of ListOfGradeSections" value={{gradeSection.ID}}>
+                                    {{gradeSection.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label>Student</label>
+                            <select id="ListOfStudents" class="form-control" [(ngModel)]="SelectedStudentID" required>
+                                <option *ngFor="let student of ListOfStudents" value={{student.ID}}>
+                                    {{student.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Case Type</label>
+                            <select id="ListOfCaseTypes" class="form-control" [(ngModel)]="SelectedCaseTypeID" required>
+                                <option *ngFor="let caseType of ListOfCaseTypes" value={{caseType.ID}}>
+                                    {{caseType.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Penalty Type</label>
+                            <select id="ListOfPenaltyTypes" class="form-control" [(ngModel)]="SelectedPenaltyTypeID" required>
+                                <option *ngFor="let penaltyType of ListOfPenaltyTypes" value={{penaltyType.ID}}>
+                                    {{penaltyType.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Emergency Contact</label>
+                            <select id="ListOfEmergencyContacts" class="form-control" [(ngModel)]="SelectedEmergencyContactID" required>
+                                <option *ngFor="let emergencyContact of ListOfEmergencyContacts" value={{emergencyContact.ID}}>
+                                    {{emergencyContact.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Informed By:</label>
+                            <input type="text" class="form-control" name="InformedBy" placeholder="Informed By" [(ngModel)]="studentDescipline.InformedBy" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Remark:</label>
+                            <textarea rows="5" class="form-control" name="Remark" [(ngModel)]="studentDescipline.Remark"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateStudentDescipline()" translate="Save Student Descipline">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Student Descipline"> Save Student Descipline </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Case Type</th>
+                            <th>Penalty Type</th>
+                            <th>Emergency Contact</th>
+                            <th>Informed By</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentDescipline of ListOfStudentDesciplines'>
+                            <td>{{studentDescipline.Student.Fullname}}</td>
+                            <td>{{studentDescipline.CaseType.Name}}</td>
+                            <td>{{studentDescipline.PenalityType.Name}}</td>
+                            <td>{{studentDescipline.EmergencyContact.Fullname}}</td>
+                            <td>{{studentDescipline.InformedBy}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleStudentDescipline(studentDescipline)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteStudentAttendance(studentDescipline)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentDesciplines || ListOfStudentDesciplines.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

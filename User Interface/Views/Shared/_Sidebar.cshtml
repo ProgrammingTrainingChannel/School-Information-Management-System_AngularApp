@@ -1,0 +1,102 @@
+﻿@using WebHelpers.Mvc5
+<aside class="main-sidebar">
+    <section class="sidebar">
+        @* BEGIN Search *@
+        <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+            </div>
+        </form>
+        @* END Search *@
+        @* BEGIN Menu *@
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">HEADER</li>
+            <li class="@Url.IsLinkActive("Index", "Home")">
+                <a href="/"><i class="fa fa-link"></i> <span>Home</span></a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Admission</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/admissionStudentInformation"><i class="fa fa-link"></i><span> Student Information </span></a></li>
+                    <li><a href="/admissionStudentAdmission"><i class="fa fa-link"></i><span> Student Admission </span></a></li>
+                    <li><a href="/admissionTeacherInformation"><i class="fa fa-link"></i><span> Teacher Information </span></a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Attendance</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li>
+                        <a  href="/attendanceStudentAttendance"><i class="fa fa-link"></i><span> Student Attendance </span></a>
+                    </li>
+                    <li><a  href="/attendanceStudentDiscipline"><i class="fa fa-link"></i>Student Discipline</a></li>
+                    <li><a  href="/attendanceTeacherAttendance"><i class="fa fa-link"></i>Teacher Attendance</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Student Grading</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/gradingSubmitGrade"><i class="fa fa-link"></i><span> Student Grading </span></a></li>
+                    <li><a href="/gradingStudentTranscript"><i class="fa fa-link"></i><span> Student Transcript </span></a></li>
+                    <li><a href="/gradingStudentGradeReport"><i class="fa fa-link"></i><span> Grade Report </span></a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Learning Schedule</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/learningScheduleClassInformation"><i class="fa fa-link"></i><span> Class Information </span></a></li>
+                    <li><a href="/learningScheduleAssignTeacher"><i class="fa fa-link"></i><span> Assign Teachers </span></a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Evaluation &amp; Payment</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/evaluationPaymentTeacherEvaluation"><i class="fa fa-link"></i><span> Teacher Evaluation </span></a></li>
+                    <li><a href="/evaluationPaymentStudentPayment"><i class="fa fa-link"></i><span> Student Payment </span></a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-link"></i> <span>Reports</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/reportStudentList"><i class="fa fa-link"></i><span> Students List </span></a></li>
+                    <li><a href="/reportTeacherList"><i class="fa fa-link"></i><span> Teachers List </span></a></li>
+                </ul>
+            </li>
+        </ul>
+        @* END Menu *@
+    </section>
+</aside>

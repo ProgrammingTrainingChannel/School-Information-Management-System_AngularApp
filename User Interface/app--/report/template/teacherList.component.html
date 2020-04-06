@@ -1,0 +1,62 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Teacher's List Report</h2>
+            </div>
+            <div class="box-body">
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Fullname</th>
+                            <th>Mother Name</th>
+                            <th>Birth Date</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                            <th>Field O fStudy</th>
+                            <th>Year Of Experience</th>
+                            <th>Hired Date</th>
+                            <th>Gender</th>
+                            <th>Campus</th>
+                            <th>Region</th>
+                            <th>SubCity</th>
+                            <th>Woreda</th>
+                            <th>House No</th>
+                            <th>Department</th>
+                            <th>Martial Status</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let teacherList of ListOfTeacherList'>
+                            <td>{{teacherList.Fullname}}</td>
+                            <td>{{teacherList.MotherName}}</td>
+                            <td>{{teacherList.BirthDate}}</td>
+                            <td>{{teacherList.PhoneNumber}}</td>
+                            <td>{{teacherList.Email}}</td>
+                            <td>{{teacherList.FieldOfStudy}}</td>
+                            <td>{{teacherList.YearOfExperience}}</td>
+                            <td>{{teacherList.HiredDate}}</td>
+                            <td>{{teacherList.GenderName}}</td>
+                            <td>{{teacherList.CampusName}}</td>
+                            <td>{{teacherList.RegionName}}</td>
+                            <td>{{teacherList.SubCityName}}</td>
+                            <td>{{teacherList.WoredaName}}</td>
+                            <td>{{teacherList.HouseNo}}</td>
+                            <td>{{teacherList.DepartmentName}}</td>
+                            <td>{{teacherList.MartialStatusName}}</td>
+                            <td>{{teacherList.Status}}</td>
+                        </tr>
+                        <tr *ngIf="!ListOfTeacherList || ListOfTeacherList.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

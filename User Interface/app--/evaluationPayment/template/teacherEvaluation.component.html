@@ -1,0 +1,95 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Teacher's Evaluation Information</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Teacher</label>
+                            <select id="ListOfTeachers" class="form-control" [(ngModel)]="SelectedTeacherID" required>
+                                <option *ngFor="let teacher of ListOfTeachers" value={{teacher.ID}}>
+                                    {{teacher.Fullname}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Academic Quarter:</label>
+                            <select id="ListOfAcademicQuarters" class="form-control" [(ngModel)]="SelectedAcademicQuarterID" required>
+                                <option *ngFor="let academicQuarter of ListOfAcademicQuarters" value={{academicQuarter.ID}}>
+                                    {{academicQuarter.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <div class="form-group">
+                            <label>Evaluation Criteria:</label>
+                            <select id="ListOfEvaluationCriterias" class="form-control" [(ngModel)]="SelectedEvaluationCriteriaID" required>
+                                <option *ngFor="let evaluationCriteria of ListOfEvaluationCriterias" value={{evaluationCriteria.ID}}>
+                                    {{evaluationCriteria.Name}}
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-3">
+                        <div class="form-group">
+                            <label>Mark:</label>
+                            <input type="text" class="form-control" name="Mark" placeholder="Mark" [(ngModel)]="teacherEvaluation.Mark" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdateTeacherEvaluation()" translate="Save Teacher Evaluation">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save Teacher Evaluation"> Save Teacher Evaluation </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Teacher Name</th>
+                            <th>Evaluation Criteria</th>
+                            <th>Mark</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let teacherEvaluation of ListOfTeacherEvaluations'>
+                            <td>{{teacherEvaluation.TeacherModel.Fullname}}</td>
+                            <td>{{teacherEvaluation.EvaluationCriteriaModel.Name}}</td>
+                            <td>{{teacherEvaluation.Mark}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSingleTeacherEvaluation(teacherEvaluation)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="DeleteTeacherEvaluation(teacherEvaluation)" type="button" style="width:90%" class="btn btn-primary btn-xs">
+                                    <i title="Remove" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentPayments || ListOfStudentPayments.length==0">
+                            <td colspan="5">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

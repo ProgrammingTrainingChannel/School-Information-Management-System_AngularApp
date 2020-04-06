@@ -1,0 +1,37 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Teacher's Attendance Report</h2>
+            </div>
+            <div class="box-body">
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>AbsensenceDuration</th>
+                            <th>PermitedBy</th>
+                            <th>TeacherName</th>
+                            <th>PermissionTypeName</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let studentAttendanceList of ListOfStudentAttendanceList'>
+                         
+                            <td>{{studentAttendanceList.AbsensenceDuration}}</td>
+                            <td>{{studentAttendanceList.PermitedBy}}</td>
+                            <td>{{studentAttendanceList.TeacherName}}</td>
+                            <td>{{studentAttendanceList.PermissionTypeName}}</td>
+                        </tr>
+                        <tr *ngIf="!ListOfStudentAttendanceList || ListOfStudentAttendanceList.length==0">
+                            <td colspan="6">
+                                No info. to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

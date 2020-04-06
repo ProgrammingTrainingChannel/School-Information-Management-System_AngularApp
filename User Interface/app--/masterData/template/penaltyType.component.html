@@ -1,0 +1,69 @@
+﻿<div class="row">
+    <div class="col-xs-12 col-md-12">
+        <div class="box box-default">
+            <div class="box-header">
+                <h2 class="box-title">Penality Type</h2>
+            </div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Name:</label>
+                            <input type="text" class="form-control" style="width:100%" name="Name" placeholder="Name" [(ngModel)]="penaltyType.Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="form-group">
+                            <label>Description:</label>
+                            <textarea class="form-control" rows="5" style="width:100%" name="Description" placeholder="Description" [(ngModel)]="penaltyType.Description"> </textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <div class="box-tools pull-right">
+                            <button uib-tooltip="Save" type="button" class="col-lg-12 btn btn-primary" (click)="SaveUpdatePenaltyType()" translate="Save penaltyType">
+                                <i title="Save" class="glyphicon glyphicon-ok-sign" translate="Save PenaltyType"> Save PenaltyType </i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-footer">
+                <table class="table table-bordered table-condensed">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let penaltyType of ListOfPenaltyTypes'>
+                            <td>{{penaltyType.Name}}</td>
+                            <td>{{penaltyType.Description}}</td>
+                            <td>
+                                <button uib-tooltip="Save" (click)="LoadSinglePenaltyType(penaltyType)" type="button" class="btn btn-primary btn-xs">
+                                    <i title="Edit" class="glyphicon glyphicon-pencil"></i>
+                                </button>
+                            </td>
+                            <td>
+                                <button uib-tooltip="Delete" (click)="DeletePenaltyType()" type="button" class="btn btn-primary btn-xs">
+                                    <i title="Delete" class="glyphicon glyphicon-remove"></i>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr *ngIf="!ListOfPenaltyTypes || ListOfPenaltyTypes.length==0">
+                            <td colspan="4">
+                                No record to display
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
